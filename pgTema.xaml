@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Trabalho.pgTema"
+             Title="pgTema">
+    <VerticalStackLayout HorizontalOptions="CenterAndExpand">
+        <Label Text="CLIQUE NO BOTÃO PARA MUDAR O TEMA DO APP" Style="{StaticResource FontTitle}"/>
+
+        <Image Style="{StaticResource Icone}" />
+
+        <Button Text="Alternar Tema" Clicked="btnTema_Clicked" Style="{StaticResource TemaButtons}" HorizontalOptions="Center" VerticalOptions="Center"/>
+    </VerticalStackLayout>
+</ContentPage>

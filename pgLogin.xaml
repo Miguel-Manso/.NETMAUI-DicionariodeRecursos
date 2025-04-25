@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Trabalho.pgLogin"
+             Title="pgLogin">
+    <StackLayout Padding="20">
+        <Frame CornerRadius="10">
+            <StackLayout>
+                <Label Text="Login" Style="{StaticResource FontTitle}"/>
+
+                <Label Text="Usuário:" Style="{StaticResource FontCorpo}" />
+                <Entry x:Name="txtUsuario" Placeholder="Usuário" Style="{StaticResource EntryLogin}"/>
+
+                <Label Text="Senha:" Style="{StaticResource FontCorpo}"/>
+                <Entry x:Name="txtSenha" Placeholder="Senha" IsPassword="True" Style="{StaticResource EntryLogin}" />
+
+                <StackLayout Orientation="Horizontal">
+                    <CheckBox x:Name="ckbSenha"/>
+
+                    <Label Text="Mostrar Senha" Style="{StaticResource FontCorpo}" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" />
+                </StackLayout>
+
+                <Button x:Name="btnEntrar" Text="Entrar" />
+
+                <Label HorizontalOptions="Center" Style="{StaticResource FontCorpo}" >
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Não possui conta? "/>
+                            <Span Text="Registre-se" FontAttributes="Bold" TextDecorations="Underline"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+
+                </Label>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+</ContentPage>

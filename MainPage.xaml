@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Trabalho.MainPage">
+    <ScrollView>
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <HorizontalStackLayout HorizontalOptions="Center" Margin="0,-70,0,0">
+                <Label Style="{StaticResource FontTitle}" Text="Dicionário de Recursos" x:Name="lblTitulo" />
+            </HorizontalStackLayout>
+
+            <Image Style="{StaticResource Icone}" Source="livro.png" />
+
+
+            <HorizontalStackLayout Style="{StaticResource MenuButtonsSpacing}">
+                <Frame Style="{StaticResource MenuButtonsFrame}">
+                    <Button Style="{StaticResource MenuButtons}" x:Name="btnLogin" Clicked="btnLogin_Clicked" Text="Login"/>
+                </Frame>
+                <Frame Style="{StaticResource MenuButtonsFrame}">
+                    <Button Style="{StaticResource MenuButtons}" x:Name="btnVeiculo" Clicked="btnVeiculo_Clicked" Text="Veículos"/>
+                </Frame>
+                <Frame Style="{StaticResource MenuButtonsFrame}">
+                    <Button Style="{StaticResource MenuButtons}" x:Name="btnTema" Clicked="btnTema_Clicked" Text="Tema" />
+                </Frame>
+
+
+            </HorizontalStackLayout>
+
+
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

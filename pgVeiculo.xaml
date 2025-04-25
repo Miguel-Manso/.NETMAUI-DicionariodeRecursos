@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Trabalho.pgVeiculo"
+             Title="pgVeiculo">
+
+    <ScrollView>
+        <Grid Padding="10" RowSpacing="10" ColumnSpacing="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Frame Style="{StaticResource VeiculosFrame}" Grid.Row="0" Grid.Column="0">
+                <VerticalStackLayout>
+                    <Image Source="civic.jpg" Style="{StaticResource ImageVeiculos}"/>
+                    <Label Text="Civic Híbrido 2024" Style="{StaticResource FontTitleVeiculos}"/>
+                    <Label Text="Honda" Style="{StaticResource FontCorpoVeiculos}"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Frame Style="{StaticResource VeiculosFrame}" Grid.Row="0" Grid.Column="1">
+                <VerticalStackLayout>
+                    <Image Source="corolla.jpg" Style="{StaticResource ImageVeiculos}"/>
+                    <Label Text="Corolla GR-Sport" Style="{StaticResource FontTitleVeiculos}"/>
+                    <Label Text="Toyota" Style="{StaticResource FontCorpoVeiculos}"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Frame Style="{StaticResource VeiculosFrame}" Grid.Row="1" Grid.Column="0">
+                <VerticalStackLayout>
+                    <Image Source="corcel.jpg" Style="{StaticResource ImageVeiculos}"/>
+                    <Label Text="Corcel 1973" Style="{StaticResource FontTitleVeiculos}"/>
+                    <Label Text="Ford" Style="{StaticResource FontCorpoVeiculos}"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Frame Style="{StaticResource VeiculosFrame}" Grid.Row="1" Grid.Column="1">
+                <VerticalStackLayout>
+                    <Image Source="golf.jpg"  Style="{StaticResource ImageVeiculos}"/>
+                    <Label Text="Golf GTI 2019" Style="{StaticResource FontTitleVeiculos}"/>
+                    <Label Text="Volkswagen" Style="{StaticResource FontCorpoVeiculos}"/>
+                </VerticalStackLayout>
+            </Frame>
+        </Grid>
+    </ScrollView>
+</ContentPage>
+
